@@ -1,4 +1,66 @@
- /* UbdateCSS */
+      #LinkList001 {overflow: unset!important;}
+
+      /* cookie-choices */
+      .cookie-choices-info{top:auto!important;bottom:70px!important;right:auto!important;left:20px!important;width:260px!important;padding:15px!important;background:var(--MinBgColor)!important;border:1px solid var(--Borderes3)!important;box-shadow:0 6px 18px 0 rgb(9 32 76 / 4%)!important;border-radius:10px!important;direction:ltr!important}
+      .cookie-choices-info .cookie-choices-text{text-align: justify!important;color:var(--txtColor)!important;font-size:13px!important;margin:0!important;display:block!important;margin-bottom:15px!important}
+      .cookie-choices-info .cookie-choices-buttons a{width:50%!important;flex-shrink:0!important;color:var(--whiteColor)!important;background:var(--minColor)!important;border-radius:30px!important;padding:7px 0!important;display:block!important;font-size:13px!important;font-family:sans-serif!important;text-transform:none!important}
+      .cookie-choices-info .cookie-choices-buttons{margin:0!important;display:flex!important;align-items:center!important;justify-content:center!important}
+      .cookie-choices-info .cookie-choices-button:first-of-type{margin-left:0!important}
+
+      /* post add&#39;s */
+      .post-body hr:before{content:&#39;\2027 \2027 \2027&#39;;display:block;text-align:center;font-size:24px;letter-spacing:0.6em;text-indent:0.6em;opacity:.8;clear:both}
+      .post-body hr{margin:2em 0;border:0}
+      /* textarea code &#39;s */
+      /*<![CDATA[*/ 
+textarea.code{min-height:200px;resize:vertical;width:100%;border-radius:3px;padding:0 15px;font-family:sans-serif;background:#f6f6f6;color:#2f3337;font-size:13px;line-height:1.8em;overflow:auto;border:1px solid var(--Borderes);margin:0;direction:ltr}
+.areacode{position:relative;display:flex;overflow:hidden;clear:both;width:100%;padding:40px 0 0;background:#f6f6f6;margin:15px 0}
+.areacode:before{content:'</>';position:absolute;left:0;top:0;background:inherit;color:var(--txtColor);font-size:12px;font-family:monospace;padding:5px 15px;z-index:2;line-height:30px}
+.areacode:after{content:'أضغط لنسخ كل المحتويات';position:absolute;right:0;top:0;color:var(--txtColor);font-size:12px;font-family:sans-serif;padding:5px 15px;z-index:2;line-height:30px}
+.dark-mode .areacode{background: var(--thrColor);}
+.dark-mode .areacode textarea.code{background: var(--thrColor);}
+      /*]]>*/
+      /* button&#39;s */
+      .post-body .button svg{vertical-align:middle;display:inline-block;width:18px;height:18px;fill:var(--whiteColor);stroke-width:1.5;margin-left:10px}
+      .post-body .button.ln svg{fill:var(--txtColor)}
+      .post-body .button{vertical-align: middle;text-align:center;top:0;transition:all .1s;position:relative;display:inline-block;margin:10px 0;padding:0 20px;border:0;border-radius:3px;line-height:35px;color:var(--whiteColor)!important;background:var(--minColor);font-size:14px;height:35px;white-space:nowrap;overflow:hidden;min-width:120px;opacity:.9}
+      .post-body .button.ln{color:var(--txtColor)!important;background:transparent;border:1px solid  rgb(162 162 162 / 38%)}
+      .post-body .button:hover {opacity: 1;}
+      /* note&#39;s */
+      .post-body .note{position:relative;padding:16px 55px 16px 20px;background:#e1f5fe;color:#3c4043;font-size:1rem;line-height:1.8em;border-radius:5px;overflow:hidden}
+      .post-body .note::before{content:&#39;&#39;;width:60px;height:60px;background:#81b4dc;display:block;border-radius:8px;position:absolute;top:-10px;right:-10px;opacity:.1}
+      .post-body .note::after{content:&#39;\2605&#39;;position:absolute;right:16px;top:11px;font-size:25px;min-width:15px;text-align:center}
+      .post-body .note.wr:after,.post-body .note.aler:after {right: 17px;content: &#39;\0021&#39;;}
+      .post-body .note.secs:after {content: &#39;\2714&#39;;font-size: 20px;}
+      .post-body .note.wr{background:#ffdfdf;color:#48525c}
+      .post-body .note.wr::before{background:#e65151}
+      .post-body .note.aler {background: #fef5e7;}
+      .post-body .note.aler:before {background: #3c3609;}
+      .post-body .note.secs:before {background: #0d8540;}
+      .post-body .note.secs {background: #e9f7ef;}
+      /* tapel */
+      .post-body  .table{display:block;overflow-y:hidden;overflow-x:auto;scroll-behavior:smooth}
+      .post-body  table{margin:0 auto;font-size:14px}
+      .post-body table{border-spacing:0}
+      .post-body  table:not(.tr-caption-container){min-width:90%;border:1px solid  rgb(162 162 162 / 38%);border-radius:3px;overflow:hidden}
+      .post-body  table th{padding:16px;text-align:inherit;border-bottom:1px solid  rgb(162 162 162 / 38%)}
+      .post-body  table:not(.tr-caption-container) tr:nth-child(2n+1) td{background:rgba(0,0,0,.01)}
+      .post-body  table:not(.tr-caption-container) tr:not(:last-child) td{border-bottom:1px solid  rgb(162 162 162 / 38%)}
+      .post-body  table:not(.tr-caption-container) td{padding:16px}
+      @media screen and (max-width:640px){.post-body .table{text-align: center;position:relative;width:calc(100% + 40px);left:-20px;right:-20px;padding:0 20px;display:flex}}
+
+      @media print {
+      div#shreeta5bar,.shBr.fixL,header,footer,aside,div#mobile-menu,div#backTop,.Dmode,.commentsection,.RelatedPosts.post-frome-tag,.author-posts,.pSh,.post-tags,.PostByCatRandom,.foqTitle,.post-meta,div#tocDiv,div#shreeta5bar,iframe,ins{display:none!important}.r-r{width:100%}body{background:#fff}.post .post-body,.post .blog-posts{padding:0!important;border:0!important;border-radius:0}.bobxed{padding:20px 0!important;margin-bottom:20px!important;}
+      }
+      <b:if cond='data:skin.vars.darckmodecolor == &quot;2px&quot;'>:root body.dark-mode{--BodyBG:#1e1e1e;--minColor:#1e1e1e;--minColorIc:#fff;--secColor:#1e1e1e;--thrColor:#2d2d30;--whiteColor:#ffffff;--hoverColor:#4e9f3d;--MinBgColor:#2d2d30;--txtColor:#ffffff;--TitColor:#ffffff;--SanColor:#eee;--Borderes:#404040;--Borderes2:#1e1e1e;--Borderes3:#404040;--PostTxtColor:#eee;--PostTitleColor:#ffffff;--PostLinkColor:#4e9f3d;--Hbg:#2d2d30;--HColor:#ffffff;--HtitleColor:#ffffff;--HbgIcon:#1e1e1e;--HCoIcon:#fff;--Cpc:#eee;--Cic:#fff;--Hok:#4e9f3d;--Sco:#4e9f3d;}</b:if>
+      <b:if cond='data:skin.vars.disaplelastposts == &quot;2px&quot;'>.home.lapel #Tempnec {display: none !important;}.mopspeed.home.lapel #Tempnec{display:block!important}</b:if>
+      <b:if cond='data:skin.vars.RemoveAuthor == &quot;2px&quot;'>.post-meta .authorPhoto, .post-meta .authorname, .author-posts{display: none !important;}</b:if>
+      <b:if cond='data:skin.vars.RemoveAdiseHome == &quot;2px&quot;'><b:if cond='data:view.isMultipleItems'>.r-r {float: none;width: 100%;}aside{display: none!important;}</b:if></b:if>
+      <b:if cond='data:skin.vars.RemoveAdisePost == &quot;2px&quot;'><b:if cond='data:view.isPost'>.r-r {float: none;width: 100%;}aside{display: none!important;}</b:if></b:if>
+      <b:if cond='data:skin.vars.RemoveAdisePage == &quot;2px&quot;'><b:if cond='data:view.isPage'>.r-r {float: none;width: 100%;}aside{display: none!important;}</b:if></b:if>
+      <b:if cond='data:skin.vars.StopCopying == &quot;2px&quot;'>body *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}blockquote,blockquote *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}</b:if>
+      <b:if cond='data:skin.vars.CoverImg == &quot;1px&quot;'>.thumb img,img.post-thumbnail,.post-random a.reimage img, img.post-thumbnail {object-fit: initial;}</b:if>
+
+  /* UbdateCSS */
 html {
   scroll-behavior: smooth;
 }
